@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1ebfc1;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+}
+
+/* Common */
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    --btn-bg: #1ebfc1;
+    padding: 14px 24px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 14px;
+    background: var(--btn-bg);
+    border: 1px solid var(--btn-bg);
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+}
+
+.text {
+    font-weight: 400;
+}
+
+.heading {
+    color: #0d1111;
+    font-weight: 700;
+}
+
+/* ========== Header ========== */
+.header {
+    min-width: 100vh;
+    padding-top: 52px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__list {
+    display: flex;
+    margin-left: 68px;
+}
+
+.navbar__link {
+    padding: 4px 20px;
+    color: #2f3a3b;
+    font-weight: 400;
+}
+
+.navbar__link--active {
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.header__signin {
+    color: #494949;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.header__signup {
+    color: var(--btn-bg);
+    background: transparent;
+    margin-left: 24px;
+    border-radius: 6px;
+}
+
+/* ========== Hero ========== */
+.hero {
+    display: flex;
+    margin-top: 50px;
+}
+
+.hero__sub-desc {
+    margin-top: 93px;
+    width: 192px;
+    height: 21px;
+}
+
+.hero__heading {
+    font-size: 6.2rem;
+    line-height: 1.16129; /* 116.129% */
+}
+
+.hero__desc {
+    margin-top: 46px;
+    color: #9da6a5;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.78; /* 177.778% */
+}
+
+.hero__row {
+    display: flex;
+    align-items: center;
+    margin-top: 52px;
+}
+
+.hero__row .hero__btn {
+    min-width: 186px;
+    padding: 24px 0;
+    font-size: 1.8rem;
+}
+
+.hero__play {
+    margin-left: 50px;
+    height: 62px;
+    width: 62px;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.hero__play--bg {
+    background: #fff;
+}
+
+.hero__play--bg::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    top: 24px;
+    left: 28px;
+    border-top: calc(10px * 0.866) solid transparent;
+    border-bottom: calc(10px * 0.866) solid transparent;
+
+    border-left: 10px solid var(--primary-color);
+}
+
+/* Hero media */
+.hero__media {
+    background: #e0f7f6;
+    position: relative;
+}
+
+.hero__img {
+    width: 576px;
+    height: 631px;
+    object-fit: cover;
+}
+
+/* Hero courses */
+.hero__courses {
+    position: absolute;
+    top: 149px;
+    left: -40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 157px;
+    height: 75px;
+    border-radius: 18px;
+    background: #fefefd;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+/* Hero schedules */
+.hero__schedules {
+    position: absolute;
+    left: -65px;
+    top: 453px;
+    width: 124px;
+    height: 132px;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero__schedules-heading {
+    display: block;
+    margin-top: 16px;
+    color: #0d1111;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.hero__schedules-row {
+    width: 74px;
+    height: 6px;
+    border-radius: 999px;
+    margin: 0 auto;
+    background: #edf1f5;
+}
+
+.hero__schedules-rate {
+    border-radius: 999px;
+    background: #fb9899;
+}
+
+.hero__schedules-rate--1st {
+    margin-top: 16px;
+    width: 51%;
+    height: 6px;
+}
+
+.hero__schedules-rate--2nd {
+    width: 70%;
+    height: 6px;
+    margin-top: 12px;
+}
+
+.hero__schedules-rate--3rd {
+    width: 40%;
+    height: 6px;
+    margin-top: 10px;
+}
+
+.hero__schedules-row--small {
+    margin-top: 16px;
+    width: 26px;
+}
+
+/* Hero active */
+.hero__active {
+    position: absolute;
+    top: 500px;
+    left: 324px;
+    width: 207px;
+    height: 90px;
+    border-radius: 24px;
+    background: #fefefd;
+    box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero__active--heading {
+    display: block;
+    margin-top: 17px;
+    text-align: center;
+    color: #0d1111;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.hero__active-avatars {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+.hero__active-img--no-avatar,
+.hero__active-img {
+    width: 33px;
+    height: 33px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.hero__active-img:not(:first-child) {
+    margin-left: -7px;
+}
+
+.hero__active-img--no-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -7px;
+    background: var(--primary-color);
+}
+
+.hero__active-img--numbers {
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
