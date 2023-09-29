@@ -50,15 +50,21 @@ a {
 
 /* ========== Header ========== */
 .header {
+    display: block;
+    padding: 8px 0;
     min-width: 100vh;
-    padding-top: 52px;
+    position: sticky;
+    z-index: 20;
+    top: -52px;
+    left: 0;
+    background: #fff;
 }
 
 .header-top {
     display: flex;
+    align-items: center;
+    padding-top: 52px;
     justify-content: space-between;
-    position: sticky;
-    z-index: 1;
 }
 
 .navbar {
